@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+/* Set the entire page's background color to rgb(135, 206, 235) using the :root pseudo-class. */
+:root {
+    --page-bg-color: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+/* Article with Paragraphs */
+/* First paragraph: White text on a black background (use :first-child). */
+article p:first-child {
+    background-color: black;
+    color: white;
+}
+
+/* Second paragraph: Standard text color (use :nth-child(2)). */
+article p:nth-child(2) {
+    /* Use your standard text color here */
+}
+
+/* Third paragraph: Red text (use :last-child). */
+article p:last-child {
+    color: red;
+}
+
+/* Unordered List */
+.unordered-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Set all list items' background color to gray, with every odd item having a white background. */
+.unordered-list li {
+    width: 50%;
+    padding: 10px;
+    background-color: gray;
+}
+
+/* Set the width to 50% and padding to 10px for each item. */
+.unordered-list li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items: Font size of 22px. */
+.unordered-list li:first-child,
+.unordered-list li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item: Pink background color. */
+.unordered-list li:nth-last-child(3) {
+    background-color: pink;
+}
+
