@@ -1,11 +1,9 @@
 /*  your css code here. If applicable */
 /* Set the entire page's background color to rgb(135, 206, 235) using the :root pseudo-class. */
-:root {
-    --page-bg-color: rgb(135, 206, 235);
-}
+
 
 body {
-    background-color: var(--page-bg-color);
+    background-color: rgb(135, 206, 235);;
 }
 
 /* Article with Paragraphs */
